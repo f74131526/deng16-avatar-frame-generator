@@ -1,0 +1,23 @@
+{
+  "app_title": "專屬大頭貼",
+  "heading_upload": "上傳<br>你的<br>照片",
+  "heading_edit": "調整<br>照片",
+  "heading_export": "匯出<br>頭貼",
+  "step_01": "01 / 上傳",
+  "step_02": "02 / 編輯",
+  "step_03": "03 / 匯出",
+  "upload_photo": "選擇照片檔案",
+  "take_photo": "開啟相機拍照",
+  "capture": "拍照",
+  "cancel": "取消",
+  "zoom": "縮放",
+  "canvas_label": "背景：",
+  "background_transparent": "透明背景",
+  "background_offwhite": "米白背景",
+  "resolution_1080": "下載 1080px",
+  "resolution_1600": "下載 1600px",
+  "share": "分享大頭貼",
+  "remake": "重新製作",
+  "bg_watermark": "DENG 16",
+  "camera_denied": "相機權限遭拒，請改用照片上傳。"
+}

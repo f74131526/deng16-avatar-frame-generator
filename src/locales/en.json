@@ -1,0 +1,23 @@
+{
+  "app_title": "Custom Avatar Frame",
+  "heading_upload": "UPLOAD<br>YOUR<br>PHOTO",
+  "heading_edit": "ADJUST<br>PHOTO",
+  "heading_export": "EXPORT<br>AVATAR",
+  "step_01": "01 / UPLOAD",
+  "step_02": "02 / EDIT",
+  "step_03": "03 / EXPORT",
+  "upload_photo": "Upload File",
+  "take_photo": "Use Camera",
+  "capture": "Capture",
+  "cancel": "Cancel",
+  "zoom": "Zoom",
+  "canvas_label": "Background: ",
+  "background_transparent": "Transparent",
+  "background_offwhite": "Off-white",
+  "resolution_1080": "Download 1080px",
+  "resolution_1600": "Download 1600px",
+  "share": "Share",
+  "remake": "Start Over",
+  "bg_watermark": "DENG 16",
+  "camera_denied": "Camera permission denied. Please upload a photo instead."
+}
