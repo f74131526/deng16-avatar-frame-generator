@@ -74,6 +74,13 @@ onMounted(() => {
       highlight: false,
       center: false,
       ready() {
+        const containerData = cropper.value.getContainerData()
+        cropper.value.setCropBoxData({
+          left: 0,
+          top: 0,
+          width: containerData.width,
+          height: containerData.height
+        })
         emit('cropper-ready', cropper.value)
       },
       zoom(e) {
