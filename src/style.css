@@ -70,8 +70,8 @@ body::before {
 }
 
 /* Brutalist Link / Button styles */
-button {
-  font-family: inherit;
+button, input, textarea, select {
+  font-family: 'Inter', 'Noto Serif TC', serif, system-ui, sans-serif;
   background: transparent;
   border: none;
   color: var(--text-main);

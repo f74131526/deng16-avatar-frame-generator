@@ -191,7 +191,20 @@ const shareImage = async () => {
   align-items: center;
   gap: 1rem;
   font-family: monospace;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .bg-toggle {
+    gap: 0.25rem;
+  }
+  .label {
+    font-size: 0.85rem;
+  }
+  .small-link {
+    font-size: 0.85rem !important;
+  }
 }
 
 .label {
