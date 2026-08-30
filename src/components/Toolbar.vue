@@ -119,10 +119,13 @@ const exportImage = (resolution) => {
     const a = document.createElement('a')
     a.href = url
     a.download = `avatar_${resolution}px.${extension}`
+    a.target = '_blank'
     document.body.appendChild(a)
     a.click()
     document.body.removeChild(a)
-    URL.revokeObjectURL(url)
+    setTimeout(() => {
+      URL.revokeObjectURL(url)
+    }, 1000)
   }, mimeType, 1.0)
 }
 
