@@ -10,20 +10,22 @@
       
       <div class="bg-toggle">
         <span class="label">{{ t('canvas_label') }}</span>
-        <button 
-          class="editorial-link small-link" 
-          :class="{ 'text-muted': isOffWhiteBg }" 
-          @click="isOffWhiteBg = false"
-        >
-          [ {{ t('background_transparent') }} ]
-        </button>
-        <button 
-          class="editorial-link small-link" 
-          :class="{ 'text-muted': !isOffWhiteBg }" 
-          @click="isOffWhiteBg = true"
-        >
-          [ {{ t('background_offwhite') }} ]
-        </button>
+        <div class="bg-options">
+          <button 
+            class="editorial-link small-link" 
+            :class="{ 'text-muted': isOffWhiteBg }" 
+            @click="isOffWhiteBg = false"
+          >
+            [ {{ t('background_transparent') }} ]
+          </button>
+          <button 
+            class="editorial-link small-link" 
+            :class="{ 'text-muted': !isOffWhiteBg }" 
+            @click="isOffWhiteBg = true"
+          >
+            [ {{ t('background_offwhite') }} ]
+          </button>
+        </div>
       </div>
 
       <div class="export-actions">
@@ -188,16 +190,22 @@ const shareImage = async () => {
 
 .bg-toggle {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-family: monospace;
+}
+
+.bg-options {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
-  font-family: monospace;
-  flex-wrap: nowrap;
-  white-space: nowrap;
 }
 
 @media (max-width: 768px) {
-  .bg-toggle {
-    gap: 0.25rem;
+  .bg-options {
+    gap: 0.5rem;
   }
   .label {
     font-size: 0.85rem;
